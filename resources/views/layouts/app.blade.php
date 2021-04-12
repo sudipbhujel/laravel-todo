@@ -5,19 +5,20 @@
     <title>Laravel Quickstart - Basic</title>
 
     <!-- CSS And JavaScript -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
     <div>
         <nav>
             <!-- Navbar Contents -->
-            <ul>
-                <li>Home</li>
-            </ul>
         </nav>
     </div>
-
-    @yield('content')
+    <div class="container mx-auto prose lg:prose-xl">
+        @yield('content')
+    </div>
 </body>
 
 </html>
